@@ -3,7 +3,7 @@ require('./config/database');
 const app = express();
 
 //set variables
-app.set('port', process.env.PORT || 3000);
+app.set('port', process.env.PORT || 3005);
 
 //middlewares
 app.use(express.urlencoded({ extended: true }));
