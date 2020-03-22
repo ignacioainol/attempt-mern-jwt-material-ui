@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 import './App.css';
-import Login from './components/Login'
+// import Login from './components/Login'
+import CheckToken from './components/CheckToken'
 import store from './store'
 import { loadUser } from './actions/authActions';
 import { Provider } from 'react-redux'
+
 
 class App extends Component {
 
@@ -12,10 +14,11 @@ class App extends Component {
   }
 
   render() {
+    console.log(loadUser());
     return (
       <Provider store={store} >
         <div className="App">
-          <Login />
+          <CheckToken />
         </div>
       </Provider>
     );
